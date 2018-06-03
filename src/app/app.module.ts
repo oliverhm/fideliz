@@ -11,6 +11,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Facebook } from '@ionic-native/facebook';
+import { OnboardingModule } from '../modules/onboarding/onboarding.module';
+import { LoginModule } from '../modules/login/login.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { Facebook } from '@ionic-native/facebook';
   ],
   imports: [
     BrowserModule,
+    OnboardingModule,
+    LoginModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
