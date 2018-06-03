@@ -34,18 +34,21 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #00C4B7,
-  secondary:  #969696,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222,
+  primary:                  #00C4B7,
+  secondary:                #969696,
+  danger:                   #f53d3d,
+  light:                    #f4f4f4,
+  dark:                     #222,
+  white:                    #FFF,
+  facebook:                 #3b5999,
+  google-plus:              #dd4b39,
 );
 
 $font-size-base:              14px;
 
 
 
-$bg-app:                      #FFF;
+$bg-app:                      color($colors, white);
 $pagination-bullet:           color($colors, primary);
 
 // App iOS Variables
