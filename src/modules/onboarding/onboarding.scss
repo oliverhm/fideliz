@@ -1,0 +1,46 @@
+onboarding {
+  &.ion-page {
+    [padding] {
+      padding-top: 55px;
+    }
+
+    .swiper-slide {
+      align-items: flex-start;
+
+      .button-next,
+      .button-prev {
+        font-weight: bold;
+      }
+
+      .slide-title {
+        color: color($colors, primary);
+        margin-bottom: 40px;
+      }
+
+      .slide-image {
+        margin-bottom: 35px;
+      }
+
+      .slide-body {
+        color: color($colors, secondary);
+        font-size: $font-size-base;
+      }
+
+      .button-useOffline {
+        color: color($colors, secondary);
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        white-space: normal;
+
+        span {
+          color: color($colors, primary);
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $pagination-bullet;
+  }
+}

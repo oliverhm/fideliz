@@ -1,0 +1,17 @@
+<ion-content padding text-center>
+  <img class="logo" src="assets/modules/login/fideliz.png" alt="Logo Fideliz">
+
+  <form [formGroup]="login" (ngSubmit)="doLogin()">
+    <ion-item>
+      <ion-label stacked>Usuário</ion-label>
+      <ion-input type="text" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Senha</ion-label>
+      <ion-textarea formControlName="password"></ion-textarea>
+    </ion-item>
+    <button ion-button block round type="submit">Login</button>
+  </form>
+
+
+</ion-content>
