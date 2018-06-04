@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>{{ title }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form padding class="account-form" [formGroup]="accountForm">
+    <ion-item *ngFor="let item of items">
+      <ion-label>{{ item.label }}</ion-label>
+      <ion-input [type]="item.type" [formControlName]="item.name"></ion-input>
+    </ion-item>
+
+    <button ion-button block round (click)="createAccount()">{{ buttonLabel }}</button>
+  </form>
+</ion-content>
