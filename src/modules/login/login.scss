@@ -4,43 +4,8 @@ login {
       margin: 35px 0;
     }
 
-    form {
-      .item {
-        padding-left: 0;
-
-        .item-inner {
-          border-bottom: none;
-          padding-right: 0;
-        }
-      }
-
-      .label,
-      .input {
-        color: color($colors, primary);
-      }
-
-      .label {
-        margin: 0;
-        position: absolute;
-        right: 15px;
-        top: 11px;
-      }
-
-      .input {
-        border-radius: 30px;
-        border: 1px solid color($colors, primary);
-        font-size: $font-size-base;
-        height: 35px;
-        margin-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 60px;
-      }
-    }
-
     .social-login {
-      .facebook {
-
-      }
+      .facebook {}
     }
   }
 }

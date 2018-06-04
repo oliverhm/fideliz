@@ -6,16 +6,18 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
   templateUrl: 'login.html'
 })
 export class LoginComponent {
-  private login : FormGroup;
+  private loginForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.login = this.formBuilder.group({
+  constructor(private formBuilder: FormBuilder) {}
+
+  public ngOnInit(): void {
+    this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: [''],
     });
   }
 
-  doLogin() {
-    console.log(this.login.value)
+  public doLogin(): void {
+    console.log(this.loginForm.value)
   }
 }
