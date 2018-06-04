@@ -1,5 +1,6 @@
 // http://ionicframework.com/docs/theming/
 
+@import '../theme/forms';
 
 // App Global Sass
 // --------------------------------------------------
@@ -16,6 +17,7 @@
 // automatically applied to the <body> element in the app.
 
 ion-app {
+  .toolbar-background,
   .ion-page {
     background-color: $bg-app;
   }

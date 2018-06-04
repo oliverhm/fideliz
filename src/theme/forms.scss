@@ -1,0 +1,43 @@
+// Regra para remover estilos desnecessários que são aplicados aos inputs em md.
+.app-root.app-root-md.md.platform-android .item-md.item-input .item-inner {
+  box-shadow: none;
+}
+
+form {
+  &.account-form,
+  &.login-form {
+    .item {
+      padding-left: 0;
+
+      .item-inner {
+        border-bottom: none;
+        padding-right: 0;
+      }
+
+      .label,
+      .text-input {
+        color: color($colors, primary);
+      }
+
+      .label {
+        font-size: 12px;
+        margin: 0;
+        position: absolute;
+        right: 15px;
+        top: 14px;
+      }
+
+      .text-input {
+        border-radius: 40px;
+        border: 1px solid color($colors, primary);
+        font-size: $font-size-base;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 0 15px;
+        padding: 8px 70px 8px 15px;
+        width: 100%;
+      }
+    }
+  }
+}

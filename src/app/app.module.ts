@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
@@ -13,6 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Facebook } from '@ionic-native/facebook';
 import { OnboardingModule } from '../modules/onboarding/onboarding.module';
 import { LoginModule } from '../modules/login/login.module';
+import { AccountModule } from '../modules/account/account.module';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,11 @@ import { LoginModule } from '../modules/login/login.module';
     TabsPage
   ],
   imports: [
+    AccountModule,
     BrowserModule,
-    OnboardingModule,
+    HttpClientModule,
     LoginModule,
+    OnboardingModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
