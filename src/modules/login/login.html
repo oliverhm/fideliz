@@ -8,17 +8,21 @@
     </ion-item>
     <ion-item>
       <ion-label stacked>Senha</ion-label>
-      <ion-textarea formControlName="password"></ion-textarea>
+      <ion-input type="password" formControlName="password"></ion-input>
     </ion-item>
     <button ion-button block round (click)="doLogin()">Login</button>
   </form>
 
   <div class="social-login">
-    <button class="facebook" ion-button block round>
+    <button class="button-facebook" ion-button block round>
       Facebook
     </button>
-    <button class="google" ion-button block round>
+    <button class="button-google" ion-button block round>
       Google
     </button>
   </div>
+
+  <button class="button-create-account" (click)="navAccountComponent()">
+    Não possui uma conta? <span class="text-link">Clique aqui para criar.</span>
+  </button>
 </ion-content>

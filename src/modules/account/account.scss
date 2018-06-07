@@ -1,0 +1,72 @@
+.list {
+  margin-bottom: 10px;
+
+  .item {
+    &.agree-terms-of-use,
+    &.agree-receive-emails {
+      padding-left: 0;
+
+      .label {
+        color: color($colors, primary);
+        font-size: $font-size-small;
+        text-overflow: clip;
+        white-space: normal;
+      }
+    }
+
+    &.agree-terms-of-use {
+      .input-wrapper {
+        padding-left: 35px;
+        position: absolute;
+      }
+
+      .radio {
+        margin-left: 2px;
+        margin-top: 0;
+
+        .radio-icon {
+          background-color: color($colors, white);
+          border-color: color($colors, primary);
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 1px;
+          height: 25px;
+          width: 25px;
+
+          .radio-inner {
+            border-radius: 50%;
+            border-width: 7px;
+            height: 23px;
+            left: 0;
+            top: 0;
+            width: 23px;
+          }
+        }
+      }
+    }
+
+    &.agree-receive-emails {
+      .checkbox {
+        margin: 6px 8px 8px 2px;
+
+        .checkbox-icon {
+          border-color: color($colors, primary);
+          border-radius: 0;
+          border-width: 1px;
+          height: 25px;
+          width: 25px;
+
+          .checkbox-inner {
+            border-width: 1.5px;
+            border-top-width: 0;
+            border-left-width: 0;
+            height: 11px;
+            left: 8px;
+            width: 6px;
+            top: 4px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -28,7 +28,7 @@ onboarding {
 
       .button-useOffline {
         color: color($colors, secondary);
-        font-size: 12px;
+        font-size: $font-size-small;
         margin: 0;
         padding: 0;
         white-space: normal;

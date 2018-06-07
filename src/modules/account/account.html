@@ -5,12 +5,24 @@
 </ion-header>
 
 <ion-content>
-  <form padding class="account-form" [formGroup]="accountForm">
+  <form padding-top padding-horizontal class="account-form" [formGroup]="accountForm">
     <ion-item *ngFor="let item of items">
       <ion-label>{{ item.label }}</ion-label>
       <ion-input [type]="item.type" [formControlName]="item.name"></ion-input>
     </ion-item>
-
-    <button ion-button block round (click)="createAccount()">{{ buttonLabel }}</button>
   </form>
+
+  <ion-list padding-horizontal no-lines>
+    <ion-item class="agree-terms-of-use">
+      <ion-label>Li e concordo com os termos de uso.</ion-label>
+      <ion-radio value="agree-terms-of-use"></ion-radio>
+    </ion-item>
+
+    <ion-item class="agree-receive-emails">
+      <ion-label>Desejo receber e-mails com promoções e novidades do Fideliz.</ion-label>
+      <ion-checkbox [(ngModel)]="agree-receive-emails"></ion-checkbox>
+    </ion-item>
+
+    <button padding-horizontal ion-button block round (click)="createAccount()">{{ buttonLabel }}</button>
+  </ion-list>
 </ion-content>

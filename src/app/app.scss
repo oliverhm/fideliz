@@ -21,4 +21,31 @@ ion-app {
   .ion-page {
     background-color: $bg-app;
   }
+
+  .header {
+    .back-button,
+    .toolbar-title {
+      color: color($colors, primary);
+    }
+
+    .toolbar-title {
+      text-transform: uppercase;
+    }
+
+    &.header-ios {
+      .toolbar-background-ios {
+        border: none;
+      }
+    }
+
+    &.header-md {
+      &::after {
+        background-image: none;
+      }
+    }
+  }
+
+  .text-link {
+    color: color($colors, primary);
+  }
 }
