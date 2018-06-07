@@ -30,4 +30,8 @@ export class LoginComponent {
   public navAccountComponent(): void {
     this.navCtrl.push(AccountComponent);
   }
+
+  public navForgotPasswordComponent(): void {
+    console.log("Clicou em navForgotPasswordComponent()");
+  }
 }

@@ -22,14 +22,15 @@ ion-app {
     background-color: $bg-app;
   }
 
+  .button,
+  .toolbar-title {
+    text-transform: uppercase;
+  }
+
   .header {
     .back-button,
     .toolbar-title {
       color: color($colors, primary);
-    }
-
-    .toolbar-title {
-      text-transform: uppercase;
     }
 
     &.header-ios {

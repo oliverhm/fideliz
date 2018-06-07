@@ -6,23 +6,32 @@
       <ion-label stacked>Usuário</ion-label>
       <ion-input type="text" formControlName="username"></ion-input>
     </ion-item>
+
     <ion-item>
       <ion-label stacked>Senha</ion-label>
       <ion-input type="password" formControlName="password"></ion-input>
     </ion-item>
-    <button ion-button block round (click)="doLogin()">Login</button>
+
+    <button margin-bottom ion-button block round (click)="doLogin()">Login</button>
   </form>
 
+  <button margin-bottom class="button-create-account" (click)="navForgotPasswordComponent()">
+    Esqueceu a senha? <span class="text-link">Recupere ela aqui.</span>
+  </button>
+
   <div class="social-login">
-    <button class="button-facebook" ion-button block round>
-      Facebook
+    <button margin-bottom class="button-facebook" ion-button icon-start block round>
+      <ion-icon name="logo-facebook"></ion-icon>
+      Entrar com Facebook
     </button>
-    <button class="button-google" ion-button block round>
-      Google
+
+    <button margin-bottom class="button-google" ion-button icon-start block round>
+      <ion-icon name="logo-googleplus"></ion-icon>
+      Entrar com Google
     </button>
   </div>
 
-  <button class="button-create-account" (click)="navAccountComponent()">
+  <button margin-bottom class="button-create-account" (click)="navAccountComponent()">
     Não possui uma conta? <span class="text-link">Clique aqui para criar.</span>
   </button>
 </ion-content>

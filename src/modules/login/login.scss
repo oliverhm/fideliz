@@ -5,7 +5,13 @@ login {
     }
 
     .social-login {
-      .facebook {}
+      .button-facebook {
+        background-color: color($colors, facebook);
+      }
+
+      .button-google {
+        background-color: color($colors, google-plus);
+      }
     }
   }
 }
