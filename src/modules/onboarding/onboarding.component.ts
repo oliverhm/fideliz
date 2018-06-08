@@ -1,6 +1,8 @@
 import { Component, ViewChild } from "@angular/core";
 import { Slides, NavController } from "ionic-angular";
+
 import { LoginComponent } from "../login/login.component";
+import { TabsPage } from "../../pages/tabs/tabs";
 
 @Component({
   selector: 'onboarding',
@@ -55,7 +57,13 @@ export class OnboardingComponent {
     this.onboardingSlides.slideNext();
   }
 
-  public jumpOnboarding(): void {
-    this.navCtrl.push(LoginComponent);
+  public navTabsPage(): void {
+    this.navCtrl.setRoot(TabsPage)
+      .then(() => this.navCtrl.popToRoot());
+  }
+
+  public navLoginComponent(): void {
+    this.navCtrl.setRoot(LoginComponent)
+      .then(() => this.navCtrl.popToRoot());
   }
 }
