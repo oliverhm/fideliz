@@ -32,18 +32,6 @@ ion-app {
     .toolbar-title {
       color: color($colors, primary);
     }
-
-    &.header-ios {
-      .toolbar-background-ios {
-        border: none;
-      }
-    }
-
-    &.header-md {
-      &::after {
-        background-image: none;
-      }
-    }
   }
 
   .text-link {

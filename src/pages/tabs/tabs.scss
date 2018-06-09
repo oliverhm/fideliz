@@ -1,0 +1,35 @@
+.tabs {
+  .tabbar {
+    .tab-button {
+      &[aria-selected=true] {
+        opacity: 0.5;
+      }
+
+      .tab-button-text {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .tab-button-icon {
+        height: 20px;
+        margin-bottom: 5px;
+
+        &::before {
+          content: "";
+          background-image: url("../assets/modules/tabs/carteira.png");
+          background-size: cover;
+          height: 20px;
+          width: 20px;
+        }
+      }
+
+      // &:nth-child(3) {
+      //   .tab-button-icon {
+      //     &::before {
+      //       background-image: url("../assets/modules/tabs/carteira.png");
+      //     }
+      //   }
+      // }
+    }
+  }
+}

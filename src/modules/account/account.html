@@ -1,11 +1,7 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title text-center>{{ title }}</ion-title>
-  </ion-navbar>
-</ion-header>
+<comp-header title="Nova Conta"></comp-header>
 
 <ion-content>
-  <form padding-top padding-horizontal class="account-form" [formGroup]="accountForm">
+  <form padding-horizontal class="account-form" [formGroup]="accountForm">
     <ion-item *ngFor="let item of items">
       <ion-label>{{ item.label }}</ion-label>
       <ion-input [type]="item.type" [formControlName]="item.name"></ion-input>

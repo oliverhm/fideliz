@@ -1,0 +1,36 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title text-center>{{ title }}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openQrCode()">
+        <ion-icon name="qr-scanner"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar [hidden]="!subheader" class="searchbar-filter">
+    <button class="button-icon-filter" ion-button icon-only clear small (click)="toggleFilter()">
+      <ion-icon ios="ios-funnel" md="md-funnel"></ion-icon>
+    </button>
+    <ion-searchbar #searchBarElement margin-bottom class="searchbar-stores" placeholder='Pesquisar' (ionInput)="filterList()" [(ngModel)]="searchBarValue"></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-toolbar [hidden]="!subheader" class="location-filters">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-7>
+          <button ion-button icon-start clear small (click)="filterNearFromMe()">
+            <ion-icon name="pin"></ion-icon>
+            Mais próximos de você
+          </button>
+        </ion-col>
+        <ion-col col-5 text-right>
+          <button ion-button icon-start clear small (click)="changeLocation()">
+            Mudar localização
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>

@@ -14,17 +14,6 @@ $app-direction: ltr;
 
 @import "ionic.globals";
 
-
-// Shared Variables
-// --------------------------------------------------
-// To customize the look and feel of this app, you can override
-// the Sass variables found in Ionic's source scss files.
-// To view all the possible Ionic variables, see:
-// http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
-
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -37,7 +26,7 @@ $colors: (
   primary:                  #00C4B7,
   secondary:                #969696,
   danger:                   #f53d3d,
-  light:                    #f4f4f4,
+  light:                    #7F7F7F,
   dark:                     #222,
   white:                    #FFF,
   facebook:                 #3b5999,
@@ -47,10 +36,33 @@ $colors: (
 $font-size-base:              14px;
 $font-size-small:             12px;
 
-
-
 $bg-app:                      color($colors, white);
 $pagination-bullet:           color($colors, primary);
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+$tabs-background: color($colors, primary);
+
+$tabs-ios-border-color: color($colors, primary);
+$tabs-md-border-color: color($colors, primary);
+
+$tabs-ios-tab-min-height: 60px;
+$tabs-md-tab-min-height: 60px;
+
+$tabs-ios-tab-text-color: color($colors, white);
+$tabs-ios-tab-text-color-active: color($colors, white);
+
+$tabs-md-tab-text-color: color($colors, white);
+$tabs-md-tab-text-color-active: color($colors, white);
+
+$toolbar-ios-height: 60px;
+$toolbar-md-height: 60px;
 
 // App iOS Variables
 // --------------------------------------------------

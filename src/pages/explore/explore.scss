@@ -1,0 +1,64 @@
+page-explore {
+  .content {
+    top: 180px;
+  }
+
+  .toolbar {
+    &.searchbar-filter,
+    &.location-filters {
+      padding: 0 16px;
+    }
+
+    &.searchbar-filter {
+      .searchbar-stores {
+        border: 1px solid color($colors, primary);
+        border-radius: 40px;
+        margin-bottom: 10px;
+      }
+
+      .button-icon-filter {
+        border-left: 2px solid #F5F5F5;
+        border-radius: 0;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        z-index: 9999;
+      }
+
+      .searchbar-input {
+        background: transparent;
+      }
+    }
+
+    &.location-filters {
+      .button {
+        margin: 0;
+        padding: 0;
+        text-transform: none;
+      }
+
+      .grid,
+      .col {
+        padding: 0;
+      }
+    }
+  }
+
+  .item {
+    padding-left: 0;
+
+    .item-inner {
+      padding: 20px 10px;
+    }
+
+    .store-category,
+    .store-address {
+      color: color($colors, light);
+      margin-bottom: 10px;
+    }
+
+    .store-logo {
+      border-radius: 50%;
+    }
+  }
+}

@@ -6,9 +6,8 @@ import { AccountService } from "./account.service";
   selector: 'account',
   templateUrl: 'account.html'
 })
-export class AccountComponent {
+export class AccountComponent implements OnInit {
   private accountForm: FormGroup;
-  public title: string;
   public buttonLabel: string;
   public items: any[];
 
@@ -25,7 +24,6 @@ export class AccountComponent {
     });
 
     this.buttonLabel = "Cadastrar";
-    this.title = "Nova Conta";
     this.items = [
       {
         label: "Nome",
