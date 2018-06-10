@@ -1,18 +1,35 @@
-<!--
-  Generated template for the ProfilePage page.
+<comp-header title="Perfil"></comp-header>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+<ion-content>
+  <ion-list>
+    <button ion-item (click)="navComponent()">
+      Meus dados pessoais
+    </button>
+    <button ion-item (click)="navComponent()">
+      Meu QR Code ID
+    </button>
+    <button ion-item (click)="navComponent()">
+      Histórico de pontuação
+    </button>
+    <button ion-item (click)="navComponent()">
+      Meus endereços
+    </button>
+    <button ion-item (click)="navComponent()">
+      Ver tutorial
+    </button>
+    <ion-item>
+      <ion-label>Notificações</ion-label>
+      <ion-toggle [(ngModel)]="notifications"></ion-toggle>
+    </ion-item>
+    <button ion-item (click)="navComponent()">
+      Termos de uso
+    </button>
+    <button ion-item (click)="navComponent()">
+      Fale conosco
+    </button>
 
-  <ion-navbar>
-    <ion-title>Profile</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
+    <div padding>
+      <button ion-button block round (click)="logout()">Fazer Logout</button>
+    </div>
+  </ion-list>
 </ion-content>
