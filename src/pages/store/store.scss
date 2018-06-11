@@ -1,0 +1,17 @@
+page-store {
+  .fixed-content,
+  .scroll-content {
+    margin-top: 60px;
+  }
+
+  .store-gift-score {
+    .score-points {
+      border: 1px solid color($colors, primary);
+      border-radius: 50%;
+      display: inline-block;
+      height: 10px;
+      margin: 5px;
+      width: 10px;
+    }
+  }
+}

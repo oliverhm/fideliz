@@ -2,16 +2,19 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of items">
+    <ion-item *ngFor="let item of items" (click)="navStorePage()">
       <ion-grid>
         <ion-row>
-          <ion-col col-3>
-            <img class="store-logo" src="https://placekitten.com/80/80">
+          <ion-col col-4>
+            <img class="store-logo" src="assets/modules/mock/barbershop.png">
           </ion-col>
-          <ion-col col-9>
+          <ion-col col-7>
             <h2 class="store-name">{{ item.name }}</h2>
             <h3 class="store-category">{{ item.category }}</h3>
             <h4 class="store-address">{{ item.address }}</h4>
+          </ion-col>
+          <ion-col col-1>
+            <ion-icon name="heart"></ion-icon>
           </ion-col>
         </ion-row>
       </ion-grid>

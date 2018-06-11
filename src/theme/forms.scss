@@ -24,16 +24,16 @@ form {
         margin: 0;
         position: absolute;
         right: 15px;
-        top: 14px;
+        top: 18px;
       }
 
       .text-input {
-        border-radius: 40px;
+        border-radius: 24px;
         border: 1px solid color($colors, primary);
         font-size: $font-size-base;
         font-weight: bold;
-        height: 40px;
-        line-height: 40px;
+        height: 48px;
+        line-height: 48px;
         margin: 0 0 15px;
         padding: 8px 70px 8px 15px;
         width: 100%;

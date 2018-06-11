@@ -2,34 +2,50 @@
   .tabbar {
     .tab-button {
       &[aria-selected=true] {
-        opacity: 0.5;
+        opacity: 0.3;
       }
 
       .tab-button-text {
-        font-weight: bold;
+        font-size: $font-size-h6;
         text-transform: uppercase;
       }
 
       .tab-button-icon {
-        height: 20px;
+        height: 24px;
         margin-bottom: 5px;
 
         &::before {
           content: "";
-          background-image: url("../assets/modules/tabs/carteira.png");
+          background-image: url("../assets/modules/tabs/explore.png");
           background-size: cover;
-          height: 20px;
-          width: 20px;
+          height: 24px;
+          width: 24px;
         }
       }
 
-      // &:nth-child(3) {
-      //   .tab-button-icon {
-      //     &::before {
-      //       background-image: url("../assets/modules/tabs/carteira.png");
-      //     }
-      //   }
-      // }
+      &:nth-child(2) {
+        .tab-button-icon {
+          &::before {
+            background-image: url("../assets/modules/tabs/favorite.png");
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .tab-button-icon {
+          &::before {
+            background-image: url("../assets/modules/tabs/wallet.png");
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .tab-button-icon {
+          &::before {
+            background-image: url("../assets/modules/tabs/profile.png");
+          }
+        }
+      }
     }
   }
 }

@@ -28,16 +28,25 @@ $colors: (
   danger:                   #f53d3d,
   light:                    #7F7F7F,
   dark:                     #222,
+  black:                    #000,
   white:                    #FFF,
   facebook:                 #3b5999,
   google-plus:              #dd4b39,
 );
 
-$font-size-base:              14px;
-$font-size-small:             12px;
-
 $bg-app:                      color($colors, white);
+$text-color:                  color($colors, light);
+
 $pagination-bullet:           color($colors, primary);
+
+
+
+$font-size-h1:                24px;
+$font-size-h5:                12px;
+$font-size-h6:                9px;
+
+$font-size-base:              14px;
+$font-size-small:             $font-size-h5;
 
 
 // Shared Variables
@@ -63,6 +72,9 @@ $tabs-md-tab-text-color-active: color($colors, white);
 
 $toolbar-ios-height: 60px;
 $toolbar-md-height: 60px;
+
+$toolbar-ios-title-font-size: $font-size-base;
+$toolbar-md-title-font-size: $font-size-base;
 
 // App iOS Variables
 // --------------------------------------------------

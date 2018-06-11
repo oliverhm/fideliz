@@ -1,0 +1,27 @@
+<comp-header title="Carteira"></comp-header>
+
+<ion-content text-center padding>
+  <img class="store-logo" src="https://placekitten.com/80/80">
+
+  <h1 class="store-name">Los Pollos Hermanos</h1>
+  <h2 class="store-category">Restaurante</h2>
+  <h3 class="store-address">Rua Albuquerque, 911 Bairro Novo México</h3>
+
+  <h4 class="store-gift-label">Junte 10 selos e ganhe balde pequeno</h4>
+  <div class="store-gift-score">
+    <span class="score-points" *ngFor="let point of points"></span>
+  </div>
+
+  <button class="button-show-on-map" ion-button block round outline (click)="call()">Ver no mapa</button>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button class="button-call" ion-button block round outline (click)="call()">Fazer uma ligação</button>
+      </ion-col>
+      <ion-col col-6>
+        <button class="button-whatsapp" ion-button block round outline (click)="whatsapp()">WhatsApp</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

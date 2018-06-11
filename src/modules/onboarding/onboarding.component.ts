@@ -12,7 +12,7 @@ export class OnboardingComponent {
   @ViewChild(Slides) onboardingSlides: Slides;
   public slides: any[];
   public title: string;
-  public useOffline: string;
+  public buttonLabel: string = "Quer experimentar sem criar uma conta? <span>Clique aqui</span>";
 
   constructor(private navCtrl: NavController) {
     this.title = "Olá, bem vindo ao Fideliz.";
@@ -46,11 +46,6 @@ export class OnboardingComponent {
         },
       },
     ];
-    this.useOffline = "Quer experimentar sem criar uma conta? <span>Clique aqui</span>";
-  }
-
-  public slidePrev(): void {
-    this.onboardingSlides.slidePrev();
   }
 
   public slideNext(): void {

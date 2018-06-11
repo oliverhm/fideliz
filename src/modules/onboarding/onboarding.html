@@ -2,12 +2,9 @@
   <ion-slide *ngFor="let slide of slides">
     <h1 class="slide-title">{{title}}</h1>
     <img class="slide-image" [src]="slide.image.src" [alt]="slide.image.alt">
-    <h3 class="slide-body">{{slide.body}}</h3>
+    <p class="slide-body">{{slide.body}}</p>
 
-    <!-- <button class="button-prev" ion-button small clear (click)="slidePrev()">Anterior</button>
-    <button class="button-next" ion-button small clear (click)="slideNext()">Próximo</button> -->
-
-    <button [innerHTML]="useOffline" class="button-useOffline" ion-button small clear (click)="navTabsPage()"></button>
+    <button [innerHTML]="buttonLabel" class="button-explore" ion-button small clear (click)="navTabsPage()"></button>
 
     <ion-grid>
       <ion-row>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { StorePage } from '../store/store';
 
 @Component({
   selector: 'page-explore',
@@ -59,5 +60,9 @@ export class ExplorePage {
         }
       },
     ];
+  }
+
+  public navStorePage(): void {
+    this.navCtrl.push(StorePage);
   }
 }

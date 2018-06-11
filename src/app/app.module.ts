@@ -17,15 +17,17 @@ import { OnboardingModule } from '../modules/onboarding/onboarding.module';
 import { LoginModule } from '../modules/login/login.module';
 import { AccountModule } from '../modules/account/account.module';
 import { HeaderModule } from '../modules/header/header.module';
+import { StorePage } from '../pages/store/store';
 
 @NgModule({
   declarations: [
-    MyApp,
     AboutPage,
-    WalletPage,
     ExplorePage,
-    TabsPage,
+    MyApp,
     ProfilePage,
+    StorePage,
+    TabsPage,
+    WalletPage
   ],
   imports: [
     AccountModule,
@@ -38,12 +40,13 @@ import { HeaderModule } from '../modules/header/header.module';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
     AboutPage,
-    WalletPage,
     ExplorePage,
+    MyApp,
+    ProfilePage,
+    StorePage,
     TabsPage,
-    ProfilePage
+    WalletPage
   ],
   providers: [
     Facebook,

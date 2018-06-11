@@ -1,11 +1,12 @@
 account {
-  .content {
-    top: 60px;
+  .fixed-content,
+  .scroll-content {
+    margin-top: 60px;
   }
 }
 
 .list {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 
   .item {
     &.agree-terms-of-use,

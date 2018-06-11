@@ -27,6 +27,11 @@ ion-app {
     text-transform: uppercase;
   }
 
+  .button {
+    font-size: $font-size-small;
+    height: 48px;
+  }
+
   .header {
     .back-button,
     .toolbar-title {

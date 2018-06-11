@@ -7,30 +7,28 @@ onboarding {
     .swiper-slide {
       align-items: flex-start;
 
-      .button-next,
-      .button-prev {
-        font-weight: bold;
-      }
-
-      .slide-title {
-        color: color($colors, primary);
-        margin-bottom: 40px;
-      }
-
       .slide-image {
         margin-bottom: 35px;
       }
 
-      .slide-body {
-        color: color($colors, secondary);
-        font-size: $font-size-base;
+      .slide-title {
+        color: color($colors, primary);
+        font-size: $font-size-h1;
+        margin-bottom: 40px;
       }
 
-      .button-useOffline {
+      .slide-body {
+        color: $text-color;
+        font-size: $font-size-base;
+        line-height: 17px;
+      }
+
+      .button-explore {
         color: color($colors, secondary);
         font-size: $font-size-small;
         margin: 0;
         padding: 0;
+        text-transform: none;
         white-space: normal;
 
         span {
