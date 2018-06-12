@@ -9,6 +9,10 @@
     </ion-buttons>
   </ion-navbar>
 
+  <ion-toolbar text-center [hidden]="!showQrcode">
+    <ion-icon class="fa fa-qrcode fa-5x"></ion-icon>
+  </ion-toolbar>
+
   <ion-toolbar [hidden]="!subheader" class="searchbar-filter">
     <button class="button-icon-filter" ion-button icon-only clear small (click)="toggleFilter()">
       <ion-icon ios="ios-funnel" md="md-funnel"></ion-icon>

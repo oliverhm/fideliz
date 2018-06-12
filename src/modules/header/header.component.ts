@@ -5,6 +5,8 @@ import { Component, Input } from "@angular/core";
   templateUrl: 'header.html'
 })
 export class HeaderComponent {
+  public showQrcode: boolean = false;
+
   @Input()
   public title: string = "Título da Página";
 
@@ -12,7 +14,7 @@ export class HeaderComponent {
   public subheader: boolean = false;
 
   public openQrCode(): void {
-    console.log("Clicou no ícone do QR Code...");
+    this.showQrcode = !this.showQrcode;
   }
 
   public filterNearFromMe(): void {
