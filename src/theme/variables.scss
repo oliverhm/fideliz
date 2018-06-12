@@ -120,3 +120,13 @@ $toolbar-md-title-font-size: $font-size-base;
 
 @import "roboto";
 @import "noto-sans";
+
+// Font Awesome 4.7
+// --------------------------------------------------
+$fa-font-path: "../assets/fonts" !default;
+
+@import "font-awesome";
+
+i[class^="fa-"], ion-icon[class^="fa-"] {
+  font-family: "FontAwesome" !important;
+}
