@@ -4,6 +4,11 @@ page-store {
     margin-top: 60px;
   }
 
+  .store-gift-label {
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+  }
+
   .store-gift-score {
     .score-points {
       border: 1px solid color($colors, primary);

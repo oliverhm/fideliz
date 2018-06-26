@@ -8,6 +8,7 @@ import { StorePage } from '../store/store';
 })
 export class ExplorePage {
   public items: any[];
+  public points: any[];
 
   constructor(public navCtrl: NavController) {
     this.items = [
@@ -59,6 +60,19 @@ export class ExplorePage {
 
         }
       },
+    ];
+
+    this.points = [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
     ];
   }
 

@@ -4,5 +4,16 @@ comp-header {
       padding-left: 16px;
       padding-right: 16px;
     }
+
+    .location-filters {
+      .button-near-from-you {
+        font-size: $font-size-base;
+        font-weight: $font-weight-medium;
+      }
+
+      .button-change-location {
+        font-weight: bold;
+      }
+    }
   }
 }

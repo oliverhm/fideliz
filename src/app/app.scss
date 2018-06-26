@@ -28,8 +28,10 @@ ion-app {
   }
 
   .button {
-    font-size: $font-size-small;
-    height: 48px;
+    &:not([icon-only]) {
+      font-size: $font-size-small;
+      height: 48px;
+    }
   }
 
   .header {

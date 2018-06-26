@@ -1,4 +1,29 @@
 page-explore {
+  .store-gift-label { //FIXME: Remover daqui depois
+    color: color($colors, primary);
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+    white-space: normal;
+  }
+
+  .store-gift-score { //FIXME: Remover daqui depois
+    white-space: normal;
+    width: 110px;
+
+    .score-points {
+      border: 1px solid color($colors, primary);
+      border-radius: 50%;
+      display: inline-block;
+      height: 10px;
+      margin-right: 12px;
+      margin-top: 5px;
+      width: 10px;
+    }
+  }
+
+
+
+
   .fixed-content,
   .scroll-content {
     margin-top: 180px;
@@ -15,6 +40,7 @@ page-explore {
         border: 1px solid color($colors, primary);
         border-radius: 40px;
         margin-bottom: 10px;
+        min-height: 48px;
       }
 
       .button-icon-filter {
@@ -22,7 +48,7 @@ page-explore {
         border-radius: 0;
         position: absolute;
         right: 20px;
-        top: 5px;
+        top: 8px;
         z-index: 9999;
       }
 
@@ -48,8 +74,14 @@ page-explore {
   .item {
     padding-left: 0;
 
-    .item-inner {
-      padding: 20px 10px;
+    &.item-store {
+      .item-inner {
+        padding: 16px;
+      }
+
+      .label {
+        margin: 0;
+      }
     }
 
     .store-name {
