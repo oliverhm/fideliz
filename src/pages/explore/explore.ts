@@ -79,4 +79,8 @@ export class ExplorePage {
   public navStorePage(): void {
     this.navCtrl.push(StorePage);
   }
+
+  public favoriteStore(): void {
+    console.log("Favorited...");
+  }
 }

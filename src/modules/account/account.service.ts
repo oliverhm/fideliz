@@ -17,7 +17,7 @@ export class AccountService {
 
     reqOpts.params.set('Content-Type', 'application/json');
 
-    return this.http.post("https://app-dot-fideliza-api.appspot.com/cadastroUsuarioApp", {
+    return this.http.post("http://localhost:8100/proxy-create-account/cadastroUsuarioApp", {
       cpf: data.cpf,
       email: data.email,
       nome: data.name,

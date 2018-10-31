@@ -2,23 +2,37 @@
 
 <ion-content>
   <ion-list>
-    <ion-item class="item-store" *ngFor="let item of items" (click)="navStorePage()">
+    <ion-item class="item-store" *ngFor="let item of items">
       <ion-grid>
         <ion-row>
-          <ion-col col-4>
-            <img class="store-logo" src="assets/modules/mock/barbershop.png">
+          <ion-col col-10 (click)="navStorePage()">
+            <ion-row>
+              <ion-col col-4>
+                <img class="store-logo" src="assets/modules/mock/barbershop.png">
+              </ion-col>
+              <ion-col col-8>
+                <ion-row>
+                  <ion-col>
+                    <h2 class="store-name">{{ item.name }}</h2>
+                    <h3 class="store-category">{{ item.category }}</h3>
+                    <h4 class="store-address">{{ item.address }}</h4>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <div class="store-gift-score">
+                      <h6 class="store-gift-label">Junte 10 selos e ganhe balde pequeno</h6>
+                      <span class="score-points" *ngFor="let point of points"></span>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
           </ion-col>
-          <ion-col col-7>
-            <h2 class="store-name">{{ item.name }}</h2>
-            <h3 class="store-category">{{ item.category }}</h3>
-            <h4 class="store-address">{{ item.address }}</h4>
-            <h6 class="store-gift-label">Junte 10 selos e ganhe balde pequeno</h6>
-            <div class="store-gift-score">
-              <span class="score-points" *ngFor="let point of points"></span>
-            </div>
-          </ion-col>
-          <ion-col col-1>
-            <ion-icon class="fa fa-heart-o fa-lg"></ion-icon>
+          <ion-col col-2>
+            <button id="button-favorite-store" ion-button icon-only clear (click)="favoriteStore()">
+              <ion-icon class="fa fa-heart-o"></ion-icon>
+            </button>
           </ion-col>
         </ion-row>
       </ion-grid>

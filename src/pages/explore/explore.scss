@@ -8,7 +8,6 @@ page-explore {
 
   .store-gift-score { //FIXME: Remover daqui depois
     white-space: normal;
-    width: 110px;
 
     .score-points {
       border: 1px solid color($colors, primary);
@@ -20,9 +19,6 @@ page-explore {
       width: 10px;
     }
   }
-
-
-
 
   .fixed-content,
   .scroll-content {
@@ -76,7 +72,7 @@ page-explore {
 
     &.item-store {
       .item-inner {
-        padding: 16px;
+        padding-right: 0;
       }
 
       .label {
@@ -99,8 +95,6 @@ page-explore {
 
     .store-logo {
       border-radius: 50%;
-      min-width: 85px;
-      width: 85px;
     }
   }
 }
